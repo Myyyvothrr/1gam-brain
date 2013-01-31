@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Impact Game</title>
+	<title>One Game A Month 1: Where The Fuck Is My Brain?</title>
+
+	<meta property="og:title" content="One Game A Month 1: Where The Fuck Is My Brain?" />
+    <meta property="og:image" content="http://www.myyyvothrr.de/images/ogam1_title_1024x1024.png" />
+    <meta property="og:description" content="January game for #1GAM - 2d platformer" />
+ 
 	<style type="text/css">
-		html,body {
-			background-color: #333;
-			color: #fff;
-			font-family: helvetica, arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			font-size: 12pt;
+		html
+		{
+		    font-size: 100%;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		body
+		{
+		    margin: 0;
+		    padding: 0;
+		    font-size: 0.75em;
+		    font-family: Helvetica, Arial, sans-serif;
+		    line-height: 1.4;
+		    background-color: #1a1a1a;
+		}
+
+		#info
+		{
+    		position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			width: 800px;
+			text-align: center;
+		}
+
+		p
+		{			
+		    color: #f86000;
+		    font-size: 1.25em;
+		    margin: 0;
+    		padding: 0;
+    		-moz-text-shadow: 0 -1px 1px #000;
+    		-webkit-text-shadow: 0 -1px 1px #000;
+    		text-shadow: 0 -1px 1px #000;
+		}
+
+		a
+		{
+		    color: #f89800;
+		    font-weight: normal;
+		}
+
+		a:hover
+		{
+		    color: #f8c800;
 		}
 		
-		#canvas {
+		#canvas
+		{
 			position: absolute;
 			left: 0;
 			right: 0;
 			top: 0;
 			bottom: 0;
 			margin: auto;
+			border: 2px solid #f86000;
+    		-moz-box-shadow: 3px -3px 3px #000;
+    		-webkit-box-shadow: 3px -3px 3px #000;
+    		box-shadow: 3px -3px 3px #000;
 		}
 	</style>
 
-	<script type="text/javascript" src="lib/impact/impact.js"></script>
-	<script type="text/javascript" src="lib/game/main.js"></script>
+	<script type="text/javascript" src="brain.js"></script>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
+	<div id="info"><img src="http://www.myyyvothrr.de/favicon.ico" width="32" height="32" /><p>&copy; 2013 Daniel Baumartz - <a href="http://www.myyyvothrr.de">Myyyvothrr.de</a></p></div>
 </body>
 </html>
